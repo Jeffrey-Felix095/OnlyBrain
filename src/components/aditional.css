@@ -1,0 +1,13 @@
+.form-1 {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+
+}
+.backGround{
+    background-image: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
