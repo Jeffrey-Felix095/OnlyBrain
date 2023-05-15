@@ -15,7 +15,7 @@ import {
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Formulario from "./components/Formulario";
 import Ingreso from './components/Ingreso';
-import MarketingForm from "./components/MarketingForm";
+
 
 
 const AppContent = () => (
