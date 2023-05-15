@@ -3,7 +3,6 @@ import {
   Billing,
   Business,
   CardDeal,
-  Clients,
   CTA,
   Footer,
   Navbar,
@@ -15,7 +14,6 @@ import {
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Formulario from "./components/Formulario";
 import Ingreso from './components/Ingreso';
-
 
 
 const AppContent = () => (
@@ -39,7 +37,6 @@ const AppContent = () => (
         <Billing />
         <CardDeal />
         <Testimonials />
-        <Clients />
         <CTA />
         <Footer />
       </div>
