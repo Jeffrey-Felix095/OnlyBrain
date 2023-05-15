@@ -8,6 +8,10 @@ import Stats from "./Stats";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
+import FormContacto from "./FormContacto";
+import Button from "./Button";
+
+
 
 export {
   Navbar,
@@ -20,4 +24,6 @@ export {
   Footer,
   Testimonials,
   Hero,
+  FormContacto,
+  Button,
 };

@@ -10,9 +10,12 @@ import {
   Stats,
   Testimonials,
   Hero,
+  FormContacto,
 } from "./components";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Formulario from "./components/Formulario";
+import Ingreso from './components/Ingreso';
+import MarketingForm from "./components/MarketingForm";
 
 
 const AppContent = () => (
@@ -44,13 +47,29 @@ const AppContent = () => (
   </div>
 );
 
+
+
+
+
+
 const App = () => (
   <Router>
     <Routes>
       <Route path="/" element={<AppContent />} />
       <Route path="/Registrarse" element={<Formulario />} />
+      <Route path="/Contacto" element={<Formulario />} />
+      <Route path="/Ingresar" element={<Ingreso />} />
     </Routes>
   </Router>
 );
 
 export default App;
+
+
+
+
+
+
+
+
+

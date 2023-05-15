@@ -1,30 +1,43 @@
 import React from 'react';
 import * as Components from './FormularioS';
 import './aditional.css';
+import logo from '../assets/logo2.png';
+import { Link } from 'react-router-dom';
 
 const Formulario = () => {
   const [signIn, toggle] = React.useState(true);
+
   return (
-    <body className='backGround'>
+    <div className='backGround'>
+      <div style={{ position: 'relative' }}>
+        <Components.ButtonBrain>
+          <Link to="/">
+            <img src={logo} alt="Logo" className="logo" />
+            <span className="text">Brain Spark</span>
+          </Link>
+        </Components.ButtonBrain>
+      </div>
       <div className='form-1'>
         <Components.Container>
           <Components.SignUpContainer signinIn={signIn}>
             <Components.Form>
-              <Components.Title>Crea una cuenta</Components.Title>
+              <Components.Title >Trabaja Con Nosotros!</Components.Title>
               <Components.Input type='text' placeholder='Nombre' />
-              <Components.Input type='email' placeholder='Correo Electrónico' />
-              <Components.Input type='password' placeholder='Contraseña' />
-              <Components.Button>Registrarse</Components.Button>
+              <Components.Input type='text' placeholder='Especialización' />
+              <Components.Input type='text' placeholder='Información de contacto' />
+              <Components.Input type='text' placeholder='Comentarios Adicionales' />
+              <Components.Button>Enviar Solicitud</Components.Button>
             </Components.Form>
           </Components.SignUpContainer>
 
           <Components.SignInContainer signinIn={signIn}>
             <Components.Form>
-              <Components.Title>Inicia sesión</Components.Title>
-              <Components.Input type='email' placeholder='Correo Electrónico' />
-              <Components.Input type='password' placeholder='Contraseña' />
-              <Components.Anchor href='#'>Olvidaste tu contraseña?</Components.Anchor>
-              <Components.Button>Iniciar Sesión</Components.Button>
+              <Components.Title>Dejanos Conocer Tu Negocio</Components.Title>
+              <Components.Input type='text' placeholder='Nombre' />
+              <Components.Input type='text' placeholder='Tipo de empresa' />
+              <Components.Input type='text' placeholder='Información de contacto' />
+              <Components.Input type='text' placeholder='Comentarios Adicionales' />
+              <Components.Button >Enviar Solicitud</Components.Button>
             </Components.Form>
           </Components.SignInContainer>
 
@@ -32,9 +45,9 @@ const Formulario = () => {
             <Components.Overlay signinIn={signIn}>
 
               <Components.LeftOverlayPanel signinIn={signIn}>
-                <Components.Title>¡Bienvenido de nuevo!</Components.Title>
+                <Components.Title>Quieres hacer crecer tu negocio?</Components.Title>
                 <Components.Paragraph>
-                  Para mantenerse conectado con nosotros, inicie sesión con su información personal
+                  Para mantenerse conectado con nosotros, brindanos información acerca de tu negocio.
                 </Components.Paragraph>
                 <Components.GhostButton onClick={() => toggle(true)}>
                   Iniciar Sesión
@@ -44,10 +57,10 @@ const Formulario = () => {
               <Components.RightOverlayPanel signinIn={signIn}>
                 <Components.Title>Hola amigo!</Components.Title>
                 <Components.Paragraph>
-                  Ingrese sus datos personales y comience el viaje con nosotros
+                  Estás más interesado en trabajar con nosotros?
                 </Components.Paragraph>
                 <Components.GhostButton onClick={() => toggle(false)}>
-                  Registrarse
+                  Postularse
                 </Components.GhostButton>
               </Components.RightOverlayPanel>
 
@@ -56,7 +69,7 @@ const Formulario = () => {
 
         </Components.Container>
       </div>
-    </body>
+    </div>
   );
 };
 

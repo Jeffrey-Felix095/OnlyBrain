@@ -1,4 +1,4 @@
-import { card } from "../assets";
+import Satisfecho from '../assets/Satisfecho.png';
 import styles, { layout } from "../style";
 import Button from "./Button";
 
@@ -6,19 +6,17 @@ const CardDeal = () => (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Find a better card deal <br className="sm:block hidden" /> in few easy
-        steps.
+        ¡Garantía de satisfacción  <br className="sm:block hidden" /> 100%!
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
-        aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+        Si no está completamente satisfecho con nuestro servicio, ¡háganoslo saber! Nos aseguraremos de que se sienta feliz y seguro con su inversión.
       </p>
 
-      <Button styles={`mt-10`} mensaje="Contáctenos"/>
+      <Button styles={`mt-10`} mensaje="Contáctenos" />
     </div>
 
     <div className={layout.sectionImg}>
-      <img src={card} alt="billing" className="w-[100%] h-[100%]" />
+      <img src={Satisfecho} alt="billing" className="w-[100%] h-[100%]" />
     </div>
   </section>
 );
