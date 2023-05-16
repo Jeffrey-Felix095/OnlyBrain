@@ -1,0 +1,23 @@
+.form-1 {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.backGround {
+    background-image: url('../assets/FondoContacto.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.backGroundContacto {
+    background-image: url('../assets/contatoPage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin-top: -100px;
+}
