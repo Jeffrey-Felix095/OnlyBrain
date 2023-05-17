@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from "axios";
 import * as Components from './FormularioS';
 import './aditional.css';
 import logo from '../assets/logo2.png';
@@ -8,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Formulario = () => {
+  const [login, setLogin] = React.useState(false);
   const [signIn, toggle] = useState(true);
   const [showPopup, setShowPopup] = useState(false);
   const [showPopup2, setShowPopup2] = useState(false);
@@ -24,22 +26,59 @@ const Formulario = () => {
   const handleButtonClick = () => {
     navigate('/');
   };
-  const handleSubmit = () => {
-    // Reiniciar los valores de los campos de entrada
-    setNombre('');
-    setEspecializacion('');
-    setContacto('');
-    setComentarios('');
-  };
-  const handleSubmit2 = () => {
+  const handleSubmit = (e) => {
+    // set configurations
+    const configuration = {
+        method: "post",
+        url: "https://nodejs-mongodb-app.herokuapp.com/applications",
+        data: {
+            name: nombre,
+            info: especializacion,
+            contact: contacto,
+            comment: comentarios
+        },
+    };
 
-    // Reiniciar los valores de los campos de entrada
-    setNombre2('');
-    setTipoEmpresa('');
-    setInformacion('');
-    setComentarios2('');
+    // make the API call
+    axios(configuration)
+        .then((result) => {
+            // Reiniciar los valores de los campos de entrada
+            setNombre('');
+            setEspecializacion('');
+            setContacto('');
+            setComentarios('');
+        })
+        .catch((error) => {
+            error = new Error();
+        });
   };
-  const handleNombre2Change = (event) => {
+  const handleSubmit2 = (e) => {
+    // set configurations
+    const configuration = {
+        method: "post",
+        url: "https://nodejs-mongodb-app.herokuapp.com/applications",
+        data: {
+            name: nombre2,
+            info: tipoEmpresa,
+            contact: informacion,
+            comment: comentarios2
+        },
+    };
+
+    // make the API call
+    axios(configuration)
+        .then((result) => {
+            // Reiniciar los valores de los campos de entrada
+            setNombre2('');
+            setTipoEmpresa('');
+            setInformacion('');
+            setComentarios2('');
+        })
+        .catch((error) => {
+            error = new Error();
+        });
+  };
+  const handlenombre2Change = (event) => {
     setNombre2(event.target.value);
   };
 
@@ -55,7 +94,7 @@ const Formulario = () => {
     setComentarios2(event.target.value);
   };
   // Funciones para manejar los cambios de los campos de entrada
-  const handleNombreChange = (event) => {
+  const handlenameChange = (event) => {
     setNombre(event.target.value);
   };
 
@@ -85,14 +124,14 @@ const Formulario = () => {
           <Components.SignUpContainer signinIn={signIn}>
             <Components.Form>
               <Components.Title >Únete a nuestro equipo</Components.Title>
-              <Components.Input type='text' placeholder='Nombre' value={nombre} onChange={handleNombreChange} />
+              <Components.Input type='text' placeholder='nombre' value={nombre} onChange={handlenameChange} />
               <Components.Input type='text' placeholder='Especialización' value={especializacion} onChange={handleEspecializacionChange} />
               <Components.Input type='text' placeholder='Correo electrónico' value={contacto} onChange={handleContactoChange} />
               <Components.Input type='text' placeholder='Comentarios Adicionales' value={comentarios} onChange={handleComentariosChange} />
               <Components.Button onClick={(e) => {
                 e.preventDefault();
                 setShowPopup2(true);
-                handleSubmit();
+                handleSubmit(e);
               }}>Enviar Solicitud</Components.Button>
             </Components.Form>
           </Components.SignUpContainer>
@@ -100,14 +139,14 @@ const Formulario = () => {
           <Components.SignInContainer signinIn={signIn}>
             <Components.Form>
               <Components.Title>Permítenos conocer tu negocio</Components.Title>
-              <Components.Input type='text' placeholder='Nombre' value={nombre2} onChange={handleNombre2Change}/>
+              <Components.Input type='text' placeholder='nombre' value={nombre2} onChange={handlenombre2Change}/>
               <Components.Input type='text' placeholder='Tipo de empresa' value={tipoEmpresa} onChange={handleTipoEmpresaChange}/>
               <Components.Input type='text' placeholder='Correo electrónico' value={informacion} onChange={handleInformacionChange}/>
               <Components.Input type='text' placeholder='Comentarios Adicionales' value={comentarios2} onChange={handleComentarios2Change}/>
               <Components.Button onClick={(e) => {
                 e.preventDefault();
                 setShowPopup(true);
-                handleSubmit2();
+                handleSubmit2(e);
               }}>Enviar Solicitud</Components.Button>
             </Components.Form>
           </Components.SignInContainer>
