@@ -31,8 +31,7 @@ const Business = () => {
     <section id="features" className={layout.section}>
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2}>
-          Tu realizas tu negocio, <br className="sm:block hidden" /> Nosotros realizamos el
-          marketing por ti.
+          Enfócate en tu negocio, <br className="sm:block hidden" />  nos encargamos del marketing.
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           Nuestra compañia puede ayudarle a tu empresa a crear
@@ -40,7 +39,7 @@ const Business = () => {
           LinkedIn, y a crear contenido atractivo para llegar a su público objetivo.
         </p>
 
-        <Button styles={`mt-10`} mensaje="Contáctenos" onClick={handleButtonClick}/>
+        <Button styles={`mt-10`} mensaje="Contáctenos" onClick={handleButtonClick} />
       </div>
 
       <div className={`${layout.sectionImg} flex-col`}>

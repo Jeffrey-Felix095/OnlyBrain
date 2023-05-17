@@ -21,3 +21,16 @@
     height: 100vh;
     margin-top: -100px;
 }
+
+
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex: 1 0 calc(50% - 10px); /* Esto proporciona un ancho del 50% con un margen de 10px entre las columnas */
+    margin: 5px; /* Ajusta los márgenes entre las columnas */
+  }

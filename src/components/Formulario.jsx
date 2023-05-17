@@ -21,7 +21,7 @@ const Formulario = () => {
         <Components.Container>
           <Components.SignUpContainer signinIn={signIn}>
             <Components.Form>
-              <Components.Title >Trabaja Con Nosotros!</Components.Title>
+              <Components.Title >Únete a nuestro equipo</Components.Title>
               <Components.Input type='text' placeholder='Nombre' />
               <Components.Input type='text' placeholder='Especialización' />
               <Components.Input type='text' placeholder='Información de contacto' />
@@ -32,7 +32,7 @@ const Formulario = () => {
 
           <Components.SignInContainer signinIn={signIn}>
             <Components.Form>
-              <Components.Title>Dejanos Conocer Tu Negocio</Components.Title>
+              <Components.Title>Permítenos conocer tu negocio</Components.Title>
               <Components.Input type='text' placeholder='Nombre' />
               <Components.Input type='text' placeholder='Tipo de empresa' />
               <Components.Input type='text' placeholder='Información de contacto' />
@@ -45,22 +45,22 @@ const Formulario = () => {
             <Components.Overlay signinIn={signIn}>
 
               <Components.LeftOverlayPanel signinIn={signIn}>
-                <Components.Title>Quieres hacer crecer tu negocio?</Components.Title>
+                <Components.Title>¿Deseas impulsar el crecimiento de tu negocio?</Components.Title>
                 <Components.Paragraph>
-                  Para mantenerse conectado con nosotros, brindanos información acerca de tu negocio.
+                  Para mantenernos en contacto, compártenos información sobre tu negocio.
                 </Components.Paragraph>
                 <Components.GhostButton onClick={() => toggle(true)}>
-                  Iniciar Sesión
+                  Enviar una solicitud
                 </Components.GhostButton>
               </Components.LeftOverlayPanel>
 
               <Components.RightOverlayPanel signinIn={signIn}>
                 <Components.Title>Hola amigo!</Components.Title>
                 <Components.Paragraph>
-                  Estás más interesado en trabajar con nosotros?
+                  ¿Estás interesado en colaborar con nosotros?
                 </Components.Paragraph>
                 <Components.GhostButton onClick={() => toggle(false)}>
-                  Postularse
+                  Enviar una solicitud
                 </Components.GhostButton>
               </Components.RightOverlayPanel>
 

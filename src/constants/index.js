@@ -27,7 +27,7 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Digitalización",
+    title: "Transformación digital",
     content:
       "Nos encargamos de transformar tu negocio de fisico a digital, crear un sitio web moderno y atractivo que atraiga a los visitantes y transmita la imagen de tu empresa.",
   },
@@ -36,14 +36,14 @@ export const features = [
     icon: shield,
     title: "Aplicaciones Optimizadas",
     content:
-      "Nos encargamos de analizar los datos y el tráfico de su sitio web y otras plataformas en línea para obtener información valiosa sobre su público objetivo, sus intereses y comportamiento, y utilizar esta información para mejorar las estrategias de marketing.",
+      "Transformamos datos en éxitos: optimizamos su estrategia de marketing al analizar y aprovechar el potencial oculto de su audiencia y su tráfico en línea.",
   },
   {
     id: "feature-3",
     icon: send,
     title: "Optimización para motores de búsqueda (SEO)",
     content:
-      "Nos encargamos de mejorar la visibilidad del sitio web de tu empresa en los resultados de búsqueda de Google y otros motores de búsqueda, utilizando técnicas de optimización de motores de búsqueda (SEO) para mejorar la posición del sitio web en los resultados de búsqueda.",
+      "Mejoramos la visibilidad en línea de tu empresa mediante estrategias de SEO para destacar en los resultados de búsqueda y atraer a más clientes potenciales.",
   },
 ];
 
