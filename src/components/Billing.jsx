@@ -25,7 +25,7 @@ const Billing = () => {
 
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Estás interesado <br className="sm:block hidden" /> en hacer parte de nuestro equipo?
+      ¿Te gustaría formar  <br className="sm:block hidden" /> parte de nuestro equipo?
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         ¡Únete a nuestro equipo de desarrollo web y juntos hagamos realidad grandes proyectos!

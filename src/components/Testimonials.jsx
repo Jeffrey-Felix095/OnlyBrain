@@ -8,12 +8,11 @@ const Testimonials = () => (
 
     <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
       <h2 className={styles.heading2}>
-        Quienes Conforman <br className="sm:block hidden" /> a Nuestro Equipo
+        Conoce a nuestro <br className="sm:block hidden" /> Talentoso equipo
       </h2>
       <div className="w-full md:mt-0 mt-6">
         <p className={`${styles.paragraph} text-left max-w-[450px]`}>
-         Cada miembro de nuestro equipo está altamente capacitado y comprometido con la excelencia en su trabajo, y siempre se esfuerza por superar las expectativas de nuestros clientes.  
-         Estamos seguros de que nuestro equipo puede ayudarlo a alcanzar sus objetivos empresariales y superar cualquier desafío que se presente en el camino.
+          Nuestro equipo altamente capacitado y comprometido superará tus expectativas para impulsar tu éxito empresarial.
         </p>
       </div>
     </div>
