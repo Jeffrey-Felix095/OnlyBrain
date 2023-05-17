@@ -32,7 +32,7 @@ const Ingreso = () => {
         axios(configuration)
             .then((result) => {
                 // redirect user to the auth page
-                window.location.href = "http://localhost:3000/";
+                window.location.href = "https://brainspark-appd.netlify.app/";
                 setLogin(true);
             })
             .catch((error) => {
