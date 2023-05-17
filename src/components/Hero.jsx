@@ -16,8 +16,8 @@ const Hero = () => {
 
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
-            Hacemos Que <br className="sm:block hidden" />{" "}
-            <span className="text-gradient">Brillen</span>{" "}
+            Hacemos <br className="sm:block hidden" />{" "}
+            <span className="text-gradient">Brillar</span>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />
@@ -25,7 +25,7 @@ const Hero = () => {
         </div>
 
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
-        Tus ideas.
+        Tus Ideas.
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           La era digital ha llegado para quedarse y digitalizar tu negocio no es una opción, es una necesidad. Te ofrecemos apoyo a ti y a tu empresea en este nuevo mundo digital.
