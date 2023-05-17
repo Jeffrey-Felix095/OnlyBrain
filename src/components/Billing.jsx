@@ -28,10 +28,10 @@ const Billing = () => {
       ¿Te gustaría formar  <br className="sm:block hidden" /> parte de nuestro equipo?
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        ¡Únete a nuestro equipo de desarrollo web y juntos hagamos realidad grandes proyectos!
-        Si eres un apasionado por la programación y te gusta trabajar en equipo, este es el lugar indicado para ti.
-        Ofrecemos un ambiente de trabajo dinámico y creativo, donde podrás poner en práctica tus habilidades y seguir
-        aprendiendo de la mano de profesionales en el área.
+      ¡Únete a nuestro equipo de especialistas y hagamos realidad grandes proyectos! Si eres apasionado por la tecnología y de trabajar en equipo, este es tu lugar. Ofrecemos un ambiente de trabajo dinámico y creativo, donde podrás poner en práctica tus habilidades y seguir
+      aprendiendo de la mano de profesionales en el área.
+
+        
       </p>
 
       <Button
