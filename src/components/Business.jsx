@@ -31,7 +31,7 @@ const Business = () => {
     <section id="features" className={layout.section}>
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2}>
-          Enfócate en tu negocio, <br className="sm:block hidden" />  nos encargamos del marketing.
+          Enfócate en tu negocio, <br className="sm:block hidden" /> nosotros nos encargamos del marketing.
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           Nuestra compañia puede ayudarle a tu empresa a crear

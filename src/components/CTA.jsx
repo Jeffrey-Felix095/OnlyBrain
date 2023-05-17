@@ -13,7 +13,7 @@ const CTA = () => {
     <section >
       <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
         <div className="flex-1 flex flex-col">
-          <h2 className={styles.heading2}>Prueba nuestros servicios justo ahora!</h2>
+          <h2 className={styles.heading2}>Descubra nuestros servicios de excelencia y potencie su éxito.</h2>
           <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
             Aprovecha esta oportunidad para llegar a un público más amplio, aumentar tu visibilidad en línea y transformar tu negocio en una empresa exitosa en el mundo digital.
           </p>

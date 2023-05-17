@@ -94,7 +94,7 @@ export const stats = [
 
 export const footerLinks = [
   {
-    title: "Likns útiles",
+    title: "Enlaces útiles",
     links: [
       {
         name: "Que es marketing?",
