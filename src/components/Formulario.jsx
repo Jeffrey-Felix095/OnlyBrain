@@ -148,7 +148,7 @@ const Formulario = () => {
                     </div>
                   </div>
                 )}
-                <Components.Title>Hola amigo!</Components.Title>
+                <Components.Title>¡Hola, amigo!</Components.Title>
                 <Components.Paragraph>
                   ¿Estás interesado en colaborar con nosotros?
                 </Components.Paragraph>
